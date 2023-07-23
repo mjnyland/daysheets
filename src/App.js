@@ -1,16 +1,4 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Flights from './components/Flights';
-import Personalized from './components/Personalized';
-import Exports from './components/Exports';
-import Reviews from './components/Reviews';
-import Footer from './components/Footer';
-import BottomCTA from './components/BottomCTA';
-import Mobile from './components/Mobile';
-import GuestList from './components/GuestList';
-import TravelProfile from './components/TravelProfile';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
