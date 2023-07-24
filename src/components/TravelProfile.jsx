@@ -40,7 +40,7 @@ const TravelProfile = () => {
                 <div className='flex flex-col justify-start mb-auto'>
 
                     <div className='my-auto'>
-
+                        <h5 class={`${styles.tag} pt-[16px]`}>Request details</h5>
                         <h5 className={`${styles.h5} text-darkBlue`}>Request  travel profiles as team members join the tour.</h5>
                         <p class={`${styles.body} text-darkBlue`}>Choose the details you require and let Daysheets handle the rest. Your team will be guided to share all necessary information, right through the app.</p>
                     </div>
@@ -50,7 +50,7 @@ const TravelProfile = () => {
                 <div className='flex flex-col justify-start mb-auto' >
 
                     <div className='my-auto'>
-
+                        <h5 class={`${styles.tag} pt-[16px]`}>Approve the request</h5>
                         <h5 className={`${styles.h5} text-darkBlue`}>Your team adds the missing details, and taps share. </h5>
                         <p class={`${styles.body} text-darkBlue`}>Members can store key details like passport and flyer numbers to share with any Daysheets tour.  Profiles can also be exported as a PDF for tours not as hip. </p>
                     </div>
@@ -60,7 +60,7 @@ const TravelProfile = () => {
                 <div className='flex flex-col justify-start mb-auto'>
 
                     <div className='my-auto'>
-
+                        <h5 class={`${styles.tag} pt-[16px]`}>Export the details</h5>
                         <h5 className={`${styles.h5} text-darkBlue`}>Check missing details and export once all are submitted.</h5>
                         <p class={`${styles.body} text-darkBlue`}>Monitor travel profile statuses live. Spot a missing passport? Send a push alert.  Ready?  Export as a spreadsheet for travel agents or border crossings.</p>
                     </div>

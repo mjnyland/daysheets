@@ -24,7 +24,7 @@ const GuestList = () => {
                         <div className={`text-darkBlue lg:col-span-1 pb-[32px]`}>
                             <h5 className={`${styles.h5}`}>Complete control on the go.</h5>
                             <p class={`${styles.body}`}>Whether you’re on the bus, or in production office maintain your guest list, and send it when you’re ready. </p>
-                            <ul className="hidden">
+                            <ul className="">
                                 <div class="flex flex-row">
                                     <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
                                     <li class={`${styles.body} `}>Google maps integration.</li>
@@ -46,7 +46,7 @@ const GuestList = () => {
                         <div className={`text-darkBlue lg:col-span-1`}>
                         <h5 className={`${styles.h5}`}>Submissions in one place.</h5>
                         <p class={`${styles.body}`}>Set who can make requests through Daysheets. Our sleek design makes it simple for all team members.</p>
-                        <ul className="hidden">
+                        <ul className="">
                             <div class="flex flex-row">
                                 <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
                                 <li class={`${styles.body} `}>Google maps integration.</li>
