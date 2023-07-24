@@ -5,7 +5,7 @@ const styles = {
     h3: "text-2xl sm:text-3xl md:text-4xl font-semibold text-left pb-[16px]  leading-tight tracking-normal",
     h4: "text-xl sm:text-2xl md:text-3xl font-bold text-left pb-[16px]",
     h5: "text-lg sm:text-xl md:text-2xl font-semibold text-left leading-tight pb-[12px]",
-    body: "text-lg text-left pb-[8px] leading-7 text-darkGray",
+    body: "text-lg text-left pb-[8px] leading-7 text-darkBlue",
     tag: "text-md text-blue font-semibold text-left pb-[8px]",
 
     navBox: "mx-auto",

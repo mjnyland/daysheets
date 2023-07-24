@@ -59,7 +59,7 @@ const Exports = () => {
             {/* Destop */}
             <div className='max-w-[1000px] mx-auto hidden lg:grid grid-cols-4 gap-[12px] justify-center items-center text-darkBlue'>
                 <img src={ exports } alt="" className="col-span-4 w-[75%] mx-auto pb-[32px]"/>
-                <img src={ personnel } alt="CSV Illustration" className="w-[160px]"/>
+                <img src={ room } alt="CSV Illustration" className="w-[160px]"/>
                 <img src={ personnel } alt="CSV Illustration" className="w-[160px]"/>
                 <img src={ transfer } alt="CSV Illustration" className="w-[160px]"/>
                 <img src={ pdf } alt="PDF Illustration" className="w-[160px]"/>

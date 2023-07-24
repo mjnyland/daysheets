@@ -16,12 +16,13 @@ const GuestList = () => {
             </div>
 
             {/* Grid */}
-            <div className='flex flex-col items-start lg:grid lg:grid-cols-3 lg:gap-[32px]  overflow-hidden'>
+            <div className='flex flex-col lg:grid lg:grid-cols-3 lg:gap-[32px] items-center overflow-hidden'>
 
                 
-                    <div className='pt-[40px]'>
+                    <div className=''>
                         {/* Text Box */}
                         <div className={`text-darkBlue lg:col-span-1 pb-[32px]`}>
+                            <h5 class={`${styles.tag} pt-[16px]`}>Simple for admins</h5>
                             <h5 className={`${styles.h5}`}>Complete control on the go.</h5>
                             <p class={`${styles.body}`}>Whether you’re on the bus, or in production office maintain your guest list, and send it when you’re ready. </p>
                             <ul className="">
@@ -44,6 +45,7 @@ const GuestList = () => {
                                         
                         {/* Text Box */}
                         <div className={`text-darkBlue lg:col-span-1`}>
+                        <h5 class={`${styles.tag} pt-[16px]`}>A breeze for your team</h5>
                         <h5 className={`${styles.h5}`}>Submissions in one place.</h5>
                         <p class={`${styles.body}`}>Set who can make requests through Daysheets. Our sleek design makes it simple for all team members.</p>
                         <ul className="">
@@ -70,7 +72,7 @@ const GuestList = () => {
 
 
                 {/* Image Box */}
-                <div class="px-6 lg:px-0 col-span-2 rounded-xl h-full">
+                <div class="px-6 lg:px-0 col-span-2 rounded-xl h-full pt-[120px]">
 
                     <img src={phoneBubbles} alt="Product screenshot" class=""/>
 
