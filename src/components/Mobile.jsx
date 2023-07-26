@@ -40,13 +40,13 @@ const Mobile = () => {
   return (
     <div className={`relative ${styles.sectionBox} bg-darkBlue`}>
       
-        <div className={`${styles.contentBox} pt-[160px] relative`}>
+        <div className={`${styles.contentBox} lg:pt-[160px] relative`}>
         
             
             {/* Heading */}
             <div className={`${styles.h2Box} `}>
                 <div  class="bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto"><h5>Mobile</h5></div>
-                <h2 className={`${styles.h2} text-center text-white pt-[16px]`}>Experience data entry in <span>minutes</span>, not hours.</h2>
+                <h2 className={`${styles.h2} text-center text-white pt-[32px]`}>Experience data entry in <span className='text-blue'>minutes</span>, not hours.</h2>
                 <div>
                     <p className={`text-white ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
                 </div>
@@ -96,7 +96,7 @@ const Mobile = () => {
                         onClick={() => handleClick(option)}
                         >
 
-                        <h5 className={`${styles.h5}`}> {option.title} </h5>
+                        <h5 className={`${styles.h5} text-white`}> {option.title} </h5>
 
                         <p className={`${styles.body} text-white`}>{option.text}</p>
 

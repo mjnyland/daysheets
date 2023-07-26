@@ -32,6 +32,7 @@ import profileRequest from "./profile-requests.png";
 import profileExport from "./profile-export.png";
 import profileExportM from "./profile-exports-mobile.png";
 import profileRequestM from "./profile-requests-mobile.png";
+import gradient from "./gradientBG.png"
 
 
 export {
@@ -68,5 +69,6 @@ export {
   profileRequest,
   profileExport,
   profileExportM,
-  profileRequestM
+  profileRequestM,
+  gradient
 };

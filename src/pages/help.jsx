@@ -1,14 +1,15 @@
 import React from 'react';
-import { Navbar, Pricing, Footer} from "../components";
+import { HelpContent, Navbar, Footer } from "../components";
+import styles from "../styles";
 
-const prices = () => {
+const Help = () => {
   return (
     <div>
         <div className='sticky top-0 z-20'><Navbar/></div>
-        <Pricing />
+        <HelpContent />
         <Footer />
     </div>
   )
 }
 
-export default prices
+export default Help

@@ -11,7 +11,7 @@ const Exports = () => {
             <div className={`${styles.h2BoxFlat} pb-[16px] lg:pb-0`}>
 
                 <div  class="bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto"><h5>Exports</h5></div>
-                <h2 className={`${styles.h2} text-center text-darkBlue pt-[16px]`}>Endless exports with complete customization.</h2>
+                <h2 className={`${styles.h2} text-center text-darkBlue pt-[32px]`}>Endless exports with complete customization.</h2>
             
             </div>
             

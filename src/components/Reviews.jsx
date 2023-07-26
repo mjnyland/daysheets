@@ -12,7 +12,7 @@ const Reviews = () => {
 
         <div className={`${styles.h2Box} pb-[80px]`}>
 
-          <h2 className={`${styles.h2} text-center pt-[16px]`}>Endless exports with complete customization.</h2>
+          <h2 className={`${styles.h2} text-center pt-[16px] text-white`}>Endless exports with complete customization.</h2>
           
           <div>
             <p className={`text-white text-center`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>

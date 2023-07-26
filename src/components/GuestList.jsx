@@ -11,8 +11,10 @@ const GuestList = () => {
             {/* Heading */}
             <div className={`${styles.h2Box} pb-[80px]`}>
                 <div  class="bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto"><h5>Guest Lists</h5></div>
-                <h2 className={`${styles.h2} text-center text-darkBlue pt-[16px]`}>Guest list <span className="text-blue">galore</span>.</h2>
-                
+                <h2 className={`${styles.h2} text-center text-darkBlue pt-[32px]`}>Guest list <span className="text-blue">galore</span>.</h2>
+                <div>
+                    <p className={`text-darkBlue ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
+                </div>
             </div>
 
             {/* Grid */}
@@ -28,15 +30,15 @@ const GuestList = () => {
                             <ul className="">
                                 <div class="flex flex-row">
                                     <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
-                                    <li class={`${styles.body} `}>Google maps integration.</li>
+                                    <li class={`${styles.body} `}>Modify pass types for different shows.</li>
                                 </div>
                                 <div class="flex flex-row">
                                     <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
-                                    <li class={`${styles.body} `}>Up to date venue name changes.</li>
+                                    <li class={`${styles.body} `}>Export as PDF, excel, and print labels.</li>
                                 </div>
                                 <div class="flex flex-row">
                                     <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
-                                    <li class={`${styles.body}`}>Instant drive times, and flagged overdrives.</li>
+                                    <li class={`${styles.body}`}>Submit the list right from your phone.</li>
                                 </div>
                             </ul>
                             </div>
@@ -51,15 +53,15 @@ const GuestList = () => {
                         <ul className="">
                             <div class="flex flex-row">
                                 <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
-                                <li class={`${styles.body} `}>Google maps integration.</li>
+                                <li class={`${styles.body} `}>User-Friendly Interface.</li>
                             </div>
                             <div class="flex flex-row">
                                 <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
-                                <li class={`${styles.body} `}>Up to date venue name changes.</li>
+                                <li class={`${styles.body} `}>Request from the Mac or Mobile.</li>
                             </div>
                             <div class="flex flex-row">
                                 <img src={ checkmark } alt="Checkmark" class={`${styles.checkmark}`}/>
-                                <li class={`${styles.body}`}>Instant drive times, and flagged overdrives.</li>
+                                <li class={`${styles.body}`}>View request statuses in real time.</li>
                             </div>
                         </ul>
                                         </div>

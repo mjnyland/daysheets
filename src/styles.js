@@ -10,7 +10,8 @@ const styles = {
 
     navBox: "mx-auto",
     contentBox: "max-w-[1240px] mx-auto",
-    sectionBox: "mx-auto py-[64px]",
+    sectionBox: "mx-auto py-[112px]",
+    sectionBoxSmall: "mx-auto py-[80px]",
     h2Box: "max-w-[800px] mx-auto pb-[64px]",
     h2BoxFlat: "max-w-[600px] mx-auto",
     h2Body: "text-center text-xl leading-8",
@@ -18,7 +19,7 @@ const styles = {
     checkmark: "pr-[8px] pb-[8px]",
 
     button: "rounded-md bg-blue px-3.5 py-2.5 text-sm font-medium text-white shadow-sm",
-    heroButton: "rounded-md bg-blue px-8 py-4 text-xl font-medium text-white shadow-sm",
+    heroButton: "rounded-md bg-blue px-8 py-4 text-xl font-medium text-white shadow-sm text-center flex items-center justify-center",
     heroButtonWhite: "rounded-md bg-white text-blue px-8 py-4 text-xl font-medium shadow-sm",
 
     twoColBox: "flex flex-col pb-[80px] items-center lg:gap-[32px] lg:grid lg:grid-cols-2",
