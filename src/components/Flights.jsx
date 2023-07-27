@@ -4,7 +4,7 @@ import { checkmark, dragAndDropFlight, flightGrid } from "../assets";
 
 const Flights = () => {
   return (
-    <div className={`${styles.SectionBox} bg-gradient-to-t from-darkBlue to-blue py-[160px] `}>
+    <div className={`${styles.SectionBox} bg-gradient-to-t from-darkBlue to-blue py-[0] lg:py-[160px] `}>
         
         <div className={`${styles.contentBox} bg-white lg:px-[64px] lg:py-[64px] px-[8px] py-[64px] rounded-none lg:rounded-2xl`}> {/* Content Box */}
 
@@ -15,7 +15,7 @@ const Flights = () => {
 
             {/* Mobile */}
 
-            <div className='flex flex-col lg:hidden'>
+            <div className='flex flex-col gap-[32px] lg:hidden'>
 
                 <div className="">
                             <div className="h-[2px] w-full bg-gray"></div>
@@ -35,7 +35,7 @@ const Flights = () => {
                     </div>
 
                     <div className='bg-lightWhite py-[32px] border-[1px] border-gray rounded-xl'>
-                            <img src={flightGrid} alt="A Flight grid in Daysheets" className="h-[700px] object-cover object-left-top"/>
+                            <img src={flightGrid} alt="A Flight grid in Daysheets" className="h-[400px] pl-[16px] object-cover object-left-top"/>
                     </div>
 
 
@@ -45,7 +45,7 @@ const Flights = () => {
             
             {/* Desktop */}
             
-            <div className='gap-[32px] pt-[32px] hidden lg:grid lg:grid-cols-2 lg:grid-rows-[300px,600px]'>
+            <div className='gap-[32px] pt-[32px] hidden lg:grid lg:grid-cols-2 lg:grid-rows-[300px,480px]'>
 
                 <div className="pb-16">
                         <div className="h-[2px] w-full bg-gray"></div>

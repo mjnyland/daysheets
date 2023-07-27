@@ -61,7 +61,7 @@ const Mobile = () => {
                     <h5
                         key={index}
                         className={`text-base sm:text-xl text-center rounded-lg cursor-pointer px-4 py-4 w-full h-full leading-tight font-normal ${
-                        selectedOption.title === option.title ? "bg-white text-blue font-semibold" : "bg-none hover:bg-dimWhite"
+                        selectedOption.title === option.title ? "bg-white text-blue font-semibold" : "bg-none hover:bg-dimWhite text-white"
                         }`}
                         onClick={() => handleClick(option)}
                     >
@@ -71,7 +71,7 @@ const Mobile = () => {
                 </div>
 
             <div>
-                <p className="text-center max-w-[640px]">{selectedOption.text}</p>
+                <p className="text-center max-w-[640px] text-white">{selectedOption.text}</p>
             </div>
 
             <div class="w-full max-w-full">

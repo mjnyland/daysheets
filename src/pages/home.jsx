@@ -7,7 +7,7 @@ const Home = () => {
 
 
     <div className='relative'>
-        <Popup />
+        {/*<Popup />*/}
         <div className='sticky top-0 z-20'><Navbar/></div>
         <Hero />
         <Features />

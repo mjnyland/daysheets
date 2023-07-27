@@ -17,8 +17,12 @@ img, picture, svg, video {
 
 }
 
+#root {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 html {
-  color-scheme: light dark;
+  background-color: green;
 }
 
 input, textarea, button, select {

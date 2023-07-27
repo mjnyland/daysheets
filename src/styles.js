@@ -10,8 +10,8 @@ const styles = {
 
     navBox: "mx-auto",
     contentBox: "max-w-[1240px] mx-auto",
-    sectionBox: "mx-auto py-[112px]",
-    sectionBoxSmall: "mx-auto py-[80px]",
+    sectionBox: "mx-auto py-[64px] lg:py-[112px]",
+    sectionBoxSmall: "mx-auto py-[40px]",
     h2Box: "max-w-[800px] mx-auto pb-[64px]",
     h2BoxFlat: "max-w-[600px] mx-auto",
     h2Body: "text-center text-xl leading-8",

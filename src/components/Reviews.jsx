@@ -26,15 +26,15 @@ const Reviews = () => {
           {/* Review 1 */}
           <div className="flex flex-col gap-4 bg-white px-[16px] py-[16px] rounded-xl shadow-lg">
             
-            <span className={`text-darkBlue text-xl`}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</span>
+            <span className={`text-darkBlue text-xl`}>“I LOVE the rooms in this hotel. Artist approved! 👍”</span>
 
             <div className='h-[1px] w-full bg-gray'></div>
             
             <div className='flex flex-row items-center'>
               <img src={avatar} alt="Profile Image" className='w-[65px] h-[65px]'/>
               <div className='pl-[16px]'>
-                <p className={`pb-[0px] text-darkGray font-semibold`}>John Doe</p>
-                <p className={` text-darkGray`}> Tour Manager - Beyonce</p>
+                <p className={`pb-[0px] text-darkGray font-semibold`}>Christian Russell</p>
+                <p className={` text-darkGray`}>Singer</p>
               </div>
             </div>
           </div>
@@ -42,15 +42,15 @@ const Reviews = () => {
                     {/* Review 1 */}
                     <div className="flex flex-col gap-4 bg-white px-[16px] py-[16px] rounded-xl shadow-lg">
             
-            <span className={`text-darkBlue text-xl`}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</span>
+            <span className={`text-darkBlue text-xl`}>"Easy bus parking in Philly! Shhh, don’t tell anyone!"</span>
 
             <div className='h-[1px] w-full bg-gray'></div>
             
             <div className='flex flex-row items-center'>
               <img src={avatar} alt="Profile Image" className='w-[65px] h-[65px]'/>
               <div className='pl-[16px]'>
-                <p className={`pb-[0px] text-darkGray font-semibold`}>John Doe</p>
-                <p className={` text-darkGray`}> Tour Manager - Beyonce</p>
+                <p className={`pb-[0px] text-darkGray font-semibold`}>Elwin Sharvill</p>
+                <p className={` text-darkGray`}>Driver</p>
               </div>
             </div>
           </div>
@@ -58,15 +58,15 @@ const Reviews = () => {
                     {/* Review 1 */}
                     <div className="flex flex-col gap-4 bg-white px-[16px] py-[16px] rounded-xl shadow-lg">
             
-            <span className={`text-darkBlue text-xl`}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</span>
+            <span className={`text-darkBlue text-xl`}>“50 foot push and down 3 stairs for load in.”</span>
 
             <div className='h-[1px] w-full bg-gray'></div>
             
             <div className='flex flex-row items-center'>
               <img src={avatar} alt="Profile Image" className='w-[65px] h-[65px]'/>
               <div className='pl-[16px]'>
-                <p className={`pb-[0px] text-darkGray font-semibold`}>John Doe</p>
-                <p className={` text-darkGray`}> Tour Manager - Beyonce</p>
+                <p className={`pb-[0px] text-darkGray font-semibold`}>Arlene McCoy</p>
+                <p className={` text-darkGray`}>Production Manager</p>
               </div>
             </div>
           </div>
@@ -74,15 +74,15 @@ const Reviews = () => {
                     {/* Review 1 */}
                     <div className="flex flex-col gap-4 bg-white px-[16px] py-[16px] rounded-xl shadow-lg">
             
-            <span className={`text-darkBlue text-xl`}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</span>
+            <span className={`text-darkBlue text-xl`}>"Tanya is available from 11/12 - 12/13 for work!"</span>
 
             <div className='h-[1px] w-full bg-gray'></div>
             
             <div className='flex flex-row items-center'>
               <img src={avatar} alt="Profile Image" className='w-[65px] h-[65px]'/>
               <div className='pl-[16px]'>
-                <p className={`pb-[0px] text-darkGray font-semibold`}>John Doe</p>
-                <p className={` text-darkGray`}> Tour Manager - Beyonce</p>
+                <p className={`pb-[0px] text-darkGray font-semibold`}>Tanya Wilson</p>
+                <p className={` text-darkGray`}>Lighting Director</p>
               </div>
             </div>
           </div>
@@ -90,15 +90,15 @@ const Reviews = () => {
                     {/* Review 1 */}
                     <div className="flex flex-col gap-4 bg-white px-[16px] py-[16px] rounded-xl shadow-lg">
             
-            <span className={`text-darkBlue text-xl`}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</span>
+            <span className={`text-darkBlue text-xl`}>"Jacob is currently based in Lisbon, Portugal"</span>
 
             <div className='h-[1px] w-full bg-gray'></div>
             
             <div className='flex flex-row items-center'>
               <img src={avatar} alt="Profile Image" className='w-[65px] h-[65px]'/>
               <div className='pl-[16px]'>
-                <p className={`pb-[0px] text-darkGray font-semibold`}>John Doe</p>
-                <p className={` text-darkGray`}> Tour Manager - Beyonce</p>
+                <p className={`pb-[0px] text-darkGray font-semibold`}>Jacob Jones</p>
+                <p className={` text-darkGray`}>Rigger</p>
               </div>
             </div>
           </div>
@@ -106,15 +106,15 @@ const Reviews = () => {
                     {/* Review 1 */}
                     <div className="flex flex-col gap-4 bg-white px-[16px] py-[16px] rounded-xl shadow-lg">
             
-            <span className={`text-darkBlue text-xl`}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</span>
+            <span className={`text-darkBlue text-xl`}>“Best place for backline in Chicago, hands down.”</span>
 
             <div className='h-[1px] w-full bg-gray'></div>
             
             <div className='flex flex-row items-center'>
               <img src={avatar} alt="Profile Image" className='w-[65px] h-[65px]'/>
               <div className='pl-[16px]'>
-                <p className={`pb-[0px] text-darkGray font-semibold`}>John Doe</p>
-                <p className={` text-darkGray`}> Tour Manager - Beyonce</p>
+                <p className={`pb-[0px] text-darkGray font-semibold`}>Gabriel Soares</p>
+                <p className={` text-darkGray`}>Sound Technician</p>
               </div>
             </div>
           </div>
