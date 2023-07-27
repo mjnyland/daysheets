@@ -8,6 +8,14 @@ const styles = {
     body: "text-lg text-left pb-[8px] leading-7 text-darkBlue",
     tag: "text-md text-blue font-semibold text-left pb-[8px]",
 
+    hidden: "opacity-0",
+    fadeUp1: "transition opacity-100 ease-in-out duration-700 translate-y-[-16px]",
+    fadeUp2: "transition opacity-100 ease-in-out delay-150 duration-700 translate-y-[-16px]",
+    fadeRight1: "transition opacity-100 ease-in-out duration-700 translate-x-[16px]",
+    fadeRight2: "transition opacity-100 ease-in-out delay-150 duration-700 translate-x-[16px]",
+    fadeLeft1: "transition opacity-100 ease-in-out duration-700 -translate-x-[16px]",
+    fadeLeft2: "transition opacity-100 ease-in-out delay-150 duration-700 -translate-x-[16px]",
+
     navBox: "mx-auto",
     contentBox: "max-w-[1240px] mx-auto",
     sectionBox: "mx-auto py-[64px] lg:py-[112px]",

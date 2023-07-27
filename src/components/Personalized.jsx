@@ -2,7 +2,17 @@ import React from 'react'
 import styles from "../styles";
 import { checkmark, checkmark_white, notes, hotels } from "../assets";
 
+import { useInView } from 'react-intersection-observer';
+
+
 const Personalized = () => {
+
+    const [ ref1, inView1 ] = useInView();
+    const [ ref2, inView2 ] = useInView();
+    const [ ref3, inView3 ] = useInView();
+
+
+
   return (
     <section className={`${styles.sectionBox} bg-darkBlue overflow-hidden`}>
         
@@ -10,16 +20,16 @@ const Personalized = () => {
 
             {/* Heading */}
             <div className={`${styles.h2Box} pb-[80px]`}>
-                <div  class="bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto"><h5>Coming soon</h5></div>
-                <h2 className={`${styles.h2} text-center text-white pt-[32px]`}>A personalized experience, <span className='text-blue'>for everyone</span> on your tour.</h2>
+                <div  class={`${inView1 ? styles.fadeUp1 : styles.hidden} bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ref={ref1}><h5>Coming soon</h5></div>
+                <h2 className={`${inView1 ? styles.fadeUp1 : styles.hidden} ${styles.h2} text-center text-white pt-[32px]`}>A personalized experience, <span className='text-blue'>for everyone</span> on your tour.</h2>
                 <div>
-                    <p className={`text-white ${styles.h2Body}`}>Manage your entire team from one place, even if they’re split across different cities.  Your experience is the command center, their’s is only they need.</p>
+                    <p className={`${inView1 ? styles.fadeUp1 : styles.hidden} text-white ${styles.h2Body}`}>Manage your entire team from one place, even if they’re split across different cities.  Your experience is the command center, their’s is only they need.</p>
                 </div>
             </div>
             
             <div className={`${styles.twoColBox}`}> {/* Feature 1 */}
 
-                <div className={`text-white col-span-1`}> {/* Text Box */}
+                <div className={`${inView2 ? styles.fadeRight1 : styles.hidden} text-white col-span-1`} ref={ref2}> {/* Text Box */}
                     <h6 className={`${styles.tag}`}>Fast tour creation</h6>
                     <h3 className={`${styles.h3}`}>Notes for groups, individuals, and you.</h3>
                     <p class={`${styles.body} text-white`}>Create as many note as needed , and specify who see’s them.  Team members also have their own daily note section where they can keep the dirt.</p>
@@ -52,7 +62,7 @@ const Personalized = () => {
                     <img src={ hotels } alt="Hotels UI" />
                 </div>
 
-                <div className={`text-white order-first lg:order-last lg:ml-[80px]`}> {/* Text Box */}
+                <div className={`${inView3 ? styles.fadeLeft1 : styles.hidden} text-white order-first lg:order-last lg:ml-[80px]`} ref={ref3}> {/* Text Box */}
                     <h6 className={`${styles.tag}`}>Fast tour creation</h6>
                     <h3 className={`${styles.h3}`}>Tab through your routing, we’ll check the drives.</h3>
                     <p class={`${styles.body} text-white`}>Build your entire tour routing without using the mouse, and let us calculate your distances between cities.</p>

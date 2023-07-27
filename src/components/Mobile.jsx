@@ -2,7 +2,15 @@ import React, { useState } from 'react';
 import styles from "../styles";
 import { notes, hotels, checkmark, checkmark_white, iPhoneMockup, iPhoneMockup2, iPhoneMockup3, lightGradient } from "../assets";
 
+import { useInView } from 'react-intersection-observer';
+
+
 const Mobile = () => {
+
+    const [ ref1, inView1 ] = useInView();
+
+
+
   const options = [
     {
       image: iPhoneMockup,
@@ -28,13 +36,6 @@ const Mobile = () => {
 
   const handleClick = (option) => {
     setSelectedOption(option);
-    console.log(selectedOption);
-    console.log(option);
-    if (selectedOption === option) {
-        console.log("same");
-    } else {
-        console.log("different");
-    }
   };
 
   return (
@@ -45,10 +46,10 @@ const Mobile = () => {
             
             {/* Heading */}
             <div className={`${styles.h2Box} `}>
-                <div  class="bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto"><h5>Mobile</h5></div>
-                <h2 className={`${styles.h2} text-center text-white pt-[32px]`}>Experience data entry in <span className='text-blue'>minutes</span>, not hours.</h2>
+                <div  class={`${inView1 ? styles.fadeUp1 : styles.hidden} bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ref={ref1}><h5>Mobile</h5></div>
+                <h2 className={`${inView1 ? styles.fadeUp2 : styles.hidden} ${styles.h2} text-center text-white pt-[32px]`}>Experience data entry in <span className='text-blue'>minutes</span>, not hours.</h2>
                 <div>
-                    <p className={`text-white ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
+                    <p className={`${inView1 ? styles.fadeUp2 : styles.hidden} text-white ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
                 </div>
             </div>
 

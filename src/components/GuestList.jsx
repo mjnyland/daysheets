@@ -2,7 +2,14 @@ import React from 'react'
 import styles from "../styles";
 import { checkmark, phoneBubbles } from "../assets";
 
+import { useInView } from 'react-intersection-observer';
+
+
 const GuestList = () => {
+
+const [ ref1, inView1 ] = useInView();
+
+
   return (
     <div className={`${styles.sectionBox} bg-white px-[8px]`}>
 
@@ -10,10 +17,10 @@ const GuestList = () => {
 
             {/* Heading */}
             <div className={`${styles.h2Box} pb-[80px]`}>
-                <div  class="bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto"><h5>Guest Lists</h5></div>
-                <h2 className={`${styles.h2} text-center text-darkBlue pt-[32px]`}>Guest list <span className="text-blue">galore</span>.</h2>
+                <div  class={`${inView1 ? styles.fadeUp1 : styles.hidden} bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ref={ref1}><h5>Guest Lists</h5></div>
+                <h2 className={`${inView1 ? styles.fadeUp2 : styles.hidden} ${styles.h2} text-center text-darkBlue pt-[32px]`}>Guest list <span className="text-blue">galore</span>.</h2>
                 <div>
-                    <p className={`text-darkBlue ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
+                    <p className={`${inView1 ? styles.fadeUp2 : styles.hidden} text-darkBlue ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
                 </div>
             </div>
 

@@ -2,7 +2,16 @@ import React from 'react'
 import styles from "../styles";
 import { exports, room, personnel, transfer, pdf } from "../assets";
 
+import { useInView } from 'react-intersection-observer';
+
+
 const Exports = () => {
+
+    const [ ref1, inView1 ] = useInView();
+
+
+
+
   return (
     <section className={`${styles.sectionBox} bg-lightWhite px-8`}>
 
@@ -10,8 +19,8 @@ const Exports = () => {
             
             <div className={`${styles.h2BoxFlat} pb-[16px] lg:pb-0`}>
 
-                <div  class="bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto"><h5>Exports</h5></div>
-                <h2 className={`${styles.h2} text-center text-darkBlue pt-[32px]`}>Endless exports with complete customization.</h2>
+                <div  class={`${inView1 ? styles.fadeUp1 : styles.hidden} bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ref={ref1}><h5>Exports</h5></div>
+                <h2 className={`${inView1 ? styles.fadeUp2 : styles.hidden} ${styles.h2} text-center text-darkBlue pt-[32px]`}>Endless exports with complete customization.</h2>
             
             </div>
             
