@@ -39,7 +39,7 @@ const Exports = () => {
   return (
     <section className={`${styles.sectionBox} bg-lightWhite px-8`}>
 
-        <div className={`${styles.contentBox}`}>
+        <div className={`${styles.contentBoxBig}`}>
             
             <div className={`${styles.h2BoxFlat} pb-[16px] lg:pb-0`}>
 
@@ -60,7 +60,7 @@ const Exports = () => {
             
             {/* Mobile */}
             <div className="flex flex-col lg:hidden text-darkBlue gap-[16px]">
-                <div className='flex items-center gap-[8px]'>
+                <div className='flex items-center gap-[24px]'>
                     <div>
                         <img src={ personnel } alt="CSV Illustration" className='max-h-[160px]'/>
                     </div>
@@ -70,7 +70,7 @@ const Exports = () => {
                     </div>
                 </div>
                 
-                <div className='flex items-center gap-[8px]'>
+                <div className='flex items-center gap-[24px]'>
                     <div>
                         <img src={ personnel } alt="CSV Illustration" className='max-h-[160px]'/>
                     </div>
@@ -79,7 +79,7 @@ const Exports = () => {
                         <p className={styles.body}>Send quick rooming lists to a hotel, or your travel agent.</p>
                     </div>
                 </div>
-                <div className='flex items-center gap-[8px]'>
+                <div className='flex items-center gap-[24px]'>
                     <div>
                         <img src={ transfer } alt="CSV Illustration" className='max-h-[160px]'/>
                     </div>
@@ -88,7 +88,7 @@ const Exports = () => {
                         <p className={styles.body}>Send quick rooming lists to a hotel, or your travel agent.</p>
                     </div>
                 </div>
-                <div className='flex items-center gap-[8px]'>
+                <div className='flex items-center gap-[24px]'>
                     <div>
                         <img src={ pdf } alt="PDF Illustration" className='max-h-[160px]'/>
                     </div>
@@ -100,7 +100,7 @@ const Exports = () => {
             </div>
 
             {/* Destop */}
-            <div className='max-w-[1000px] mx-auto hidden lg:grid grid-cols-4 gap-[12px] justify-center items-center text-darkBlue'>
+            <div className=' mx-auto hidden lg:grid grid-cols-4 gap-y-[12px] gap-x-[32px] justify-center items-center text-darkBlue'>
                 <motion.img 
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{y: 0, opacity: 1}}
@@ -112,40 +112,40 @@ const Exports = () => {
                 whileInView={{y: 0, opacity: 1}}
                 transition={{ duration: 0.4, delay: 0.3, ease: 'easeOut' }}
                 viewport={{once: true, amount: 1}}
-                src={ room } alt="CSV Illustration" className="w-[160px]"/>
+                src={ room } alt="CSV Illustration" className="w-[160px] mx-auto"/>
                 <motion.img 
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{y: 0, opacity: 1}}
                 transition={{ duration: 0.4, delay: 0.4, ease: 'easeOut' }}
                 viewport={{once: true, amount: 1}}
-                src={ personnel } alt="CSV Illustration" className="w-[160px]"/>
+                src={ personnel } alt="CSV Illustration" className="w-[160px] mx-auto"/>
                 <motion.img 
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{y: 0, opacity: 1}}
                 transition={{ duration: 0.4, delay: 0.5, ease: 'easeOut' }}
                 viewport={{once: true, amount: 1}}
-                src={ transfer } alt="CSV Illustration" className="w-[160px]"/>
+                src={ transfer } alt="CSV Illustration" className="w-[160px] mx-auto"/>
                 <motion.img 
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{y: 0, opacity: 1}}
                 transition={{ duration: 0.4, delay: 0.6, ease: 'easeOut' }}
                 viewport={{once: true, amount: 1}}
-                src={ pdf } alt="PDF Illustration" className="w-[160px]"/>
-                <motion.div>
-                    <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Rooming Lists</p>
-                    <p className={styles.body}>Send quick rooming lists to a hotel, or your travel agent.</p>
+                src={ pdf } alt="PDF Illustration" className="w-[160px] mx-auto"/>
+                <motion.div className='mx-auto'>
+                    <p className={`text-xl font-bold text-center font-body text-darkBlue pb-[8px]`}>Rooming Lists</p>
+                    <p className={`text-center ${styles.body}`}>Send quick rooming lists to a hotel, or your travel agent.</p>
                 </motion.div>
-                <motion.div>
-                    <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Personnel Manifests</p>
-                    <p className={styles.body}>Choose the necessary details to export, and go.</p>
+                <motion.div className='flex flex-col items-center'>
+                        <p className={`text-xl font-bold text-center font-body text-darkBlue pb-[8px]`}>Personnel Manifests</p>
+                        <p className={`text-center ${styles.body}`}>Choose the necessary details to export, and go.</p>
                 </motion.div>
-                <motion.div>
-                    <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Transfer Grids</p>
-                    <p className={styles.body}>Send a grid to your ground service, or to the festival.</p>
+                <motion.div className='mx-auto'>
+                    <p className={`text-xl font-bold text-center font-body text-darkBlue pb-[8px]`}>Transfer Grids</p>
+                    <p className={`text-center ${styles.body}`}>Send a grid to your ground service, or to the festival.</p>
                 </motion.div>
-                <motion.div>
-                    <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Custom Day Sheets</p>
-                    <p className={styles.body}>Add local weather in one click.  How cool is that? </p>
+                <motion.div className='mx-auto'>
+                    <p className={`text-xl font-bold text-center font-body text-darkBlue pb-[8px]`}>Custom Day Sheets</p>
+                    <p className={`text-center ${styles.body}`}>Add local weather in one click.  How cool is that? </p>
                 </motion.div>
             </div>
         </div>

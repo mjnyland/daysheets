@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 
 
 img, picture, svg, video {
@@ -17,11 +21,12 @@ img, picture, svg, video {
 * {
   margin: 0;
   padding: 0;
-  /*background-color: rgba(0 100 0 / .55);*/
+  /*background-color: rgba(0 100 0 / .05);*/
 }
 
 #root {
   margin: 0;
+  min-height: 100vh;
 }
 
 .calendly-popup{

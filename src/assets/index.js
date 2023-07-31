@@ -33,6 +33,10 @@ import profileExport from "./profile-export.png";
 import profileExportM from "./profile-exports-mobile.png";
 import profileRequestM from "./profile-requests-mobile.png";
 import gradient from "./gradientBG.png"
+import chatBubble1 from "./chatBubble_1.png"
+import chatBubble2 from "./chatBubble_2.png"
+import chatBubble3 from "./chatBubble_3.png"
+import chatBubbles_M from "./chatBubbles_M.png"
 
 
 export {
@@ -70,5 +74,9 @@ export {
   profileExport,
   profileExportM,
   profileRequestM,
-  gradient
+  gradient,
+  chatBubble1,
+  chatBubble2,
+  chatBubble3,
+  chatBubbles_M
 };

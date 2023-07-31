@@ -106,9 +106,9 @@ const Personalized = () => {
                 variants={fadeRight}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{once: true, amount: 1}}
+                viewport={{once: true, amount: .75}}
                 className={` text-white col-span-1`} > {/* Text Box */}
-                    <h6 className={`${styles.tag}`}>Fast tour creation</h6>
+                    <h6 className={`${styles.tag}`}>Personalized Notes</h6>
                     <h3 className={`${styles.h3}`}>Notes for groups, individuals, and you.</h3>
                     <p className={`${styles.body} text-white`}>Create as many note as needed , and specify who see’s them. Team members even have their own daily note section where they can keep the dirt.</p>
                     
@@ -130,9 +130,9 @@ const Personalized = () => {
                 variants={fadeLeft}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{once: true, amount: 1}}
+                viewport={{once: true, amount: .75}}
                 className={` text-white order-first lg:order-last lg:ml-[80px]`} > {/* Text Box */}
-                    <h6 className={`${styles.tag}`}>Fast tour creation</h6>
+                    <h6 className={`${styles.tag}`}>Group events</h6>
                     <h3 className={`${styles.h3}`}>Ensure privacy and avoid confusion with visibility.</h3>
                     <p className={`${styles.body} text-white`}>Group specific events and reservations ensure your band shows up to the right call time, in the correct lobby.</p>
                     

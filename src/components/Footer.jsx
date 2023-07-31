@@ -4,7 +4,7 @@ import { logotype } from "../assets";
 
 const Footer = () => {
   return (
-    <div className={`${styles.sectionBoxSmall} bg-gray`}>
+    <div className={`${styles.sectionBoxSmall} bg-gray w-full`}>
         <div className={`${styles.contentBox} px-4`}>
             <div className='flex flex-col items-center gap-[32px]'>
                 <img src={logotype} alt="Daysheets Logotype" className="Daysheets Logotype"/>

@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   const handleDownload = () => {
-    const daysheetsUrl = 'https://www.daysheets.com'; // Replace this with the URL to your daysheets file
+    const daysheetsUrl = 'https://apps.apple.com/us/app/daysheets/id1579012240'; // Replace this with the URL to your daysheets file
     // You can implement any additional logic here before triggering the download if needed.
     // For a simple file download, you can just change the location of the window to the daysheets URL.
     window.location.href = daysheetsUrl;

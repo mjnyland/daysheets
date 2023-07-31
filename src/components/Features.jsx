@@ -76,7 +76,7 @@ const Features = () => {
                 variants={fadeRight}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 1 }}
+                viewport={{ once: true, amount: .75 }}
                 className={` text-darkBlue`}> {/* Text Box */}
                     <h6 className={`${styles.tag}`}>Fast tour creation</h6>
                     <h3 className={`${styles.h3}`}>Tab through your routing, we’ll check the drives.</h3>
@@ -100,7 +100,7 @@ const Features = () => {
                 variants={fadeLeft}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{once: true, amount: 1}}
+                viewport={{once: true, amount: .75}}
                 className={`text-darkBlue order-first lg:order-last`}> {/* Text Box */}
                     <h6 className={`${styles.tag}`}>Drag & Drop Personnel</h6>
                     <h3 className={`${styles.h3}`}>Effortlessly import your personnel, in record time.</h3>
@@ -118,7 +118,7 @@ const Features = () => {
                     variants={fadeRight}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{once: true, amount: 1}}
+                    viewport={{once: true, amount: .75}}
                     className={`text-darkBlue`}> {/* Text Box */}
                     <h6 className={`${styles.tag}`}>Shortcuts</h6>
                     <h3 className={`${styles.h3}`}>Designed around tabbing, and shortcuts.</h3>

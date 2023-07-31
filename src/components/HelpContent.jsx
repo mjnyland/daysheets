@@ -3,9 +3,9 @@ import styles from "../styles";
 
 const HelpContent = () => {
   return (
-    <div class={`${styles.sectionBox} bg-lightWhite`}>
+    <div class={`${styles.sectionBox} bg-white grow`}>
 
-    <div class={`${styles.contentBox}`}>
+    <div class={`${styles.contentBox} my-auto`}>
 
         <div className='grid grid-cols-3 gap-[64px]'>
             <div className='col-span-1'>

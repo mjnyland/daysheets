@@ -80,8 +80,8 @@ const Flights = () => {
                         <p className={`${styles.body} text-darkBlue`}>View, sort and filter every flight across a tour, and export them as a spreadsheet.  Daysheets eliminates the risk involved in manually creating flight grids.</p>
                     </div>
 
-                    <div className='bg-lightWhite py-[32px] border-[1px] border-gray rounded-xl'>
-                            <img src={flightGrid} alt="A Flight grid in Daysheets" className="h-[400px] pl-[16px] object-cover object-left-top"/>
+                    <div className='overflow-hidden h-[480px] bg-lightWhite border-[1px] border-gray rounded-xl pt-[32px]'>
+                      <img src={flightGrid} alt="A Flight grid in Daysheets" className="w-[1000px] max-w-none"/>
                     </div>
 
 

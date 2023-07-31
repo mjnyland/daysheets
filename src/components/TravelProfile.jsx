@@ -42,7 +42,7 @@ const TravelProfile = () => {
   return (
     <div className={`${styles.sectionBoxFlat} bg-lightWhite px-[8px]`}>
 
-        <div className={`${styles.contentBox}`}>
+        <div className={`${styles.contentBoxBig}`}>
             {/* Heading */}
             <div className={`${styles.h2Box}`}>
                 <motion.div
@@ -82,8 +82,7 @@ const TravelProfile = () => {
 
                                 
                 <div>
-                    <img src={ profileRequest } alt="Profile Requests" className='hidden md:inline'/>
-                    <img src={ profileRequestM } alt="Profile Requests" className='md:hidden'/>
+                    <img src={ profileRequestM } alt="Profile Requests" className='px-[16px]'/>
                 </div>
 
 
@@ -94,10 +93,9 @@ const TravelProfile = () => {
                         {/*<p class={`${styles.body} text-darkBlue`}>Members can store key details like passport and flyer numbers to share with any Daysheets tour.  Profiles can also be exported as a PDF for tours not as hip. </p>*/}
                     </div>
 
-                    <div className="relative">
-                    <div className="hidden absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-lightWhite to-blank"></div>
-                    <img src={ iPhoneMock } alt="Profile Requests" />
-                </div>
+                    <div className="relative h-[480px] overflow-hidden px-[16px]">
+                      <img src={ iPhoneMock } alt="Profile Requests" />
+                    </div>
 
 
 
@@ -109,7 +107,7 @@ const TravelProfile = () => {
                     </div>
 
                     <div>
-                    <img src={ profileExportM } alt="Profile Requests" className='md:hidden'/>
+                    <img src={ profileExportM } alt="Profile Requests" className='px-[16px]'/>
                 </div>
 
 
@@ -120,9 +118,9 @@ const TravelProfile = () => {
             
             
             {/* Desktop Grid */}
-            <div className='grid-cols-1 hidden lg:grid lg:grid-cols-3 items-start gap-y-[64px] gap-x-[32px]'>
+            <div className='grid-cols-1 hidden lg:grid lg:grid-cols-3 items-start gap-y-[32px] gap-x-[16px]'>
 
-            <div className='flex flex-col justify-start mb-auto'>
+              <div className='flex flex-col justify-start mb-auto'>
 
                 <div className='my-auto flex flex-col items-center mx-auto max-w-[336px]'>
                     <h5 className={`${styles.tag} pt-[16px]`}>Step 1</h5>
@@ -153,20 +151,18 @@ const TravelProfile = () => {
                 </div>
 
                 <div className="pt-[64px]">
-                    <img src={ profileRequest } alt="Profile Requests" className='hidden md:inline'/>
-                    <img src={ profileRequestM } alt="Profile Requests" className='md:hidden'/>
+                    <img src={ profileRequest } alt="Profile Requests" className=''/>
                 </div>
 
 
                 <div className="relative">
                     <div className="hidden absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-lightWhite to-blank"></div>
-                    <img src={ iPhoneMock } alt="Profile Requests" />
+                    <img src={ iPhoneMock } alt="Profile Requests" className=''/>
                 </div>
 
 
                 <div className="pt-[64px]">
-                    <img src={ profileExport } alt="Profile Requests" className='hidden md:inline'/>
-                    <img src={ profileExportM } alt="Profile Requests" className='md:hidden'/>
+                    <img src={ profileExport } alt="Profile Requests" className=''/>
                 </div>
 
             

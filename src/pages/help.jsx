@@ -4,7 +4,7 @@ import styles from "../styles";
 
 const Help = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-[100vh]">
         <div className='sticky top-0 z-20'><Navbar/></div>
         <HelpContent />
         <Footer />

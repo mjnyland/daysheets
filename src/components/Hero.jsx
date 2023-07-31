@@ -62,7 +62,7 @@ const Hero = () => {
     setIsHidden(!isHidden);
   };
 
-  const daysheetsUrl = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Replace this with the URL to your daysheets file
+  const daysheetsUrl = 'https://apps.apple.com/us/app/daysheets/id1579012240'; // Replace this with the URL to your daysheets file
 
   return (
 
@@ -78,7 +78,7 @@ const Hero = () => {
               variants={fadeUp}
               initial="hidden"
               animate="visible"
-              >The modern solution for touring and <span className="text-blue">production management.</span></motion.h1>
+              >The modern solution for touring and <span className="text-blue">production management</span></motion.h1>
           </div>
 
           <div className="max-w-[800px] pb-[40px]">
