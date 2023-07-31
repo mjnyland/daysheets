@@ -9,6 +9,7 @@ module.exports = {
       gray: "rgba(228, 231, 241, 1)",
       darkGray: "#6b7280",
       blue: "#3433FA",
+      navyBlue: "#060693",
       dimBlue: "rgba(52, 51, 250, 0.05)",
       darkBlue: "rgba(1, 1, 25, 1)",
       lightWhite: "rgba(250, 250, 255, 1)",
@@ -16,7 +17,7 @@ module.exports = {
       dimBlack: 'rgba(0, 0, 0, 0.5)',
     },
     fontFamily: {
-       
+       body: ['"Inter"', 'sans-serif'],
     },
     extend: {},
   },

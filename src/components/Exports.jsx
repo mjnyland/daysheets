@@ -1,17 +1,41 @@
 import React from 'react'
 import styles from "../styles";
 import { exports, room, personnel, transfer, pdf } from "../assets";
+import { motion } from 'framer-motion';
 
-import { useInView } from 'react-intersection-observer';
-
+const fadeUp = {
+    hidden: { 
+      opacity: 0,
+      y: 20,
+    },
+    visible: { 
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: .5,
+        delay: 0.2,
+        ease: 'easeOut'
+      }
+    },
+  };
+  
+  const fadeUp2 = {
+    hidden: { 
+      opacity: 0,
+      y: 20,
+    },
+    visible: { 
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: .5,
+        delay: 0.4,
+        ease: 'easeOut'
+      }
+    },
+  };
 
 const Exports = () => {
-
-    const [ ref1, inView1 ] = useInView();
-
-
-
-
   return (
     <section className={`${styles.sectionBox} bg-lightWhite px-8`}>
 
@@ -19,8 +43,18 @@ const Exports = () => {
             
             <div className={`${styles.h2BoxFlat} pb-[16px] lg:pb-0`}>
 
-                <div  class={`${inView1 ? styles.fadeUp1 : styles.hidden} bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ref={ref1}><h5>Exports</h5></div>
-                <h2 className={`${inView1 ? styles.fadeUp2 : styles.hidden} ${styles.h2} text-center text-darkBlue pt-[32px]`}>Endless exports with complete customization.</h2>
+                <motion.div 
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 1}}
+                className={` bg-dimBlue text-blue px-6 py-2 rounded-full font-semibold w-fit mx-auto`}><h5>Exports</h5></motion.div>
+                <motion.h2 
+                variants={fadeUp2}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 1}}
+                className={`${styles.h2} text-center text-darkBlue pt-[32px]`}>Endless exports with complete customization.</motion.h2>
             
             </div>
             
@@ -67,27 +101,52 @@ const Exports = () => {
 
             {/* Destop */}
             <div className='max-w-[1000px] mx-auto hidden lg:grid grid-cols-4 gap-[12px] justify-center items-center text-darkBlue'>
-                <img src={ exports } alt="" className="col-span-4 w-[75%] mx-auto pb-[32px]"/>
-                <img src={ room } alt="CSV Illustration" className="w-[160px]"/>
-                <img src={ personnel } alt="CSV Illustration" className="w-[160px]"/>
-                <img src={ transfer } alt="CSV Illustration" className="w-[160px]"/>
-                <img src={ pdf } alt="PDF Illustration" className="w-[160px]"/>
-                <div>
+                <motion.img 
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{y: 0, opacity: 1}}
+                transition={{ duration: 0.4, delay: 0.2, ease: 'easeOut' }}
+                viewport={{once: true, amount: 1}}
+                src={ exports } alt="" className="col-span-4 w-[75%] mx-auto pb-[32px]"/>
+                <motion.img 
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{y: 0, opacity: 1}}
+                transition={{ duration: 0.4, delay: 0.3, ease: 'easeOut' }}
+                viewport={{once: true, amount: 1}}
+                src={ room } alt="CSV Illustration" className="w-[160px]"/>
+                <motion.img 
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{y: 0, opacity: 1}}
+                transition={{ duration: 0.4, delay: 0.4, ease: 'easeOut' }}
+                viewport={{once: true, amount: 1}}
+                src={ personnel } alt="CSV Illustration" className="w-[160px]"/>
+                <motion.img 
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{y: 0, opacity: 1}}
+                transition={{ duration: 0.4, delay: 0.5, ease: 'easeOut' }}
+                viewport={{once: true, amount: 1}}
+                src={ transfer } alt="CSV Illustration" className="w-[160px]"/>
+                <motion.img 
+                initial={{ y: 30, opacity: 0 }}
+                whileInView={{y: 0, opacity: 1}}
+                transition={{ duration: 0.4, delay: 0.6, ease: 'easeOut' }}
+                viewport={{once: true, amount: 1}}
+                src={ pdf } alt="PDF Illustration" className="w-[160px]"/>
+                <motion.div>
                     <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Rooming Lists</p>
                     <p className={styles.body}>Send quick rooming lists to a hotel, or your travel agent.</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div>
                     <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Personnel Manifests</p>
                     <p className={styles.body}>Choose the necessary details to export, and go.</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div>
                     <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Transfer Grids</p>
                     <p className={styles.body}>Send a grid to your ground service, or to the festival.</p>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div>
                     <p className={`text-xl font-bold text-darkBlue pb-[8px]`}>Custom Day Sheets</p>
                     <p className={styles.body}>Add local weather in one click.  How cool is that? </p>
-                </div>
+                </motion.div>
             </div>
         </div>
 

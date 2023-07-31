@@ -1,15 +1,42 @@
 import React, { useState } from 'react';
 import styles from "../styles";
-import { notes, hotels, checkmark, checkmark_white, iPhoneMockup, iPhoneMockup2, iPhoneMockup3, lightGradient } from "../assets";
+import { iPhoneMockup, iPhoneMockup2, iPhoneMockup3 } from "../assets";
+import { motion } from 'framer-motion';
 
-import { useInView } from 'react-intersection-observer';
+const fadeUp = {
+  hidden: { 
+    opacity: 0,
+    y: 20,
+  },
+  visible: { 
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: .5,
+      delay: 0.2,
+      ease: 'easeOut'
+    }
+  },
+};
+
+const fadeUp2 = {
+  hidden: { 
+    opacity: 0,
+    y: 20,
+  },
+  visible: { 
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: .5,
+      delay: 0.4,
+      ease: 'easeOut'
+    }
+  },
+};
 
 
 const Mobile = () => {
-
-    const [ ref1, inView1 ] = useInView();
-
-
 
   const options = [
     {
@@ -41,16 +68,31 @@ const Mobile = () => {
   return (
     <div className={`relative ${styles.sectionBox} bg-darkBlue`}>
       
-        <div className={`${styles.contentBox} lg:pt-[160px] relative`}>
+        <div className={`${styles.contentBox} relative`}>
         
             
             {/* Heading */}
             <div className={`${styles.h2Box} `}>
-                <div  class={`${inView1 ? styles.fadeUp1 : styles.hidden} bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ref={ref1}><h5>Mobile</h5></div>
-                <h2 className={`${inView1 ? styles.fadeUp2 : styles.hidden} ${styles.h2} text-center text-white pt-[32px]`}>Experience data entry in <span className='text-blue'>minutes</span>, not hours.</h2>
-                <div>
-                    <p className={`${inView1 ? styles.fadeUp2 : styles.hidden} text-white ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
-                </div>
+                <motion.div 
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 1}}
+                className={` bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ><h5>Mobile</h5></motion.div>
+                <motion.h2
+                variants={fadeUp2}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 1}}
+                className={` ${styles.h2} text-center text-white pt-[32px]`}>Experience data entry in <span className='text-blue'>minutes</span>, not hours.</motion.h2>
+                <motion.div
+                variants={fadeUp2}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 1}}
+                >
+                    <p className={` text-white ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
+                </motion.div>
             </div>
 
 
@@ -75,7 +117,7 @@ const Mobile = () => {
                 <p className="text-center max-w-[640px] text-white">{selectedOption.text}</p>
             </div>
 
-            <div class="w-full max-w-full">
+            <div className="w-full max-w-full">
                 <img src={selectedOption.image} alt="" className="w-full h-auto inline" />
             </div>
             </div>
@@ -84,12 +126,11 @@ const Mobile = () => {
 
             <div className="hidden flex-row items-start px-8 pb-4 rounded-2xl stroke-2 stroke-white md:flex ">
 
-                <div class="flex flex-col gap-4 mt-16 w-1/2 lg:w-2/3 z-10">
+                <div className="flex flex-col gap-4 mt-16 w-1/2 lg:w-2/3 z-10">
 
                     {options.map((option, index) => (
 
                         <div
-                        
                         key={index}
                         className={`flex flex-col items-start gap-2 text-xl text-left px-6 py-6 rounded-lg cursor-pointer leading-tight font-medium ${
                         selectedOption.title === option.title ? "bg-dimWhite text-white border-dimWhite border-[1px]" : "bg-none hover:bg-dimWhite border-blank border-[1px]"
@@ -109,14 +150,14 @@ const Mobile = () => {
 
 
 
-                <div class="flex w-1/2 lg:w-1/3 z-10">
+                <div className="flex w-1/2 lg:w-1/3 z-10">
                     <img src={selectedOption.image} alt="" className="inline object-cover flex-start" />
                 </div>
 
             </div>
 
 
-            <div className='bg-blue h-[640px] w-[640px] absolute top-[400px] left-[320px] rounded-full blur-[320px] z-0 opacity-30'></div>
+            <div className='bg-blue h-[640px] w-[640px] absolute top-[150px] left-[320px] rounded-full blur-[300px] z-0 opacity-30'></div>
 
         </div>
 

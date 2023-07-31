@@ -3,10 +3,12 @@ import styles from "../styles"; // Import css modules stylesheet as styles
 import { logo } from "../assets"; // Import assets
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { InlineWidget } from "react-calendly";
+import { PopupButton } from "react-calendly";
 
 const DownloadButton = ({ handleDownload }) => {
   return (
-    <button className={`${styles.button} w-full`} onClick={handleDownload}>
+    <button className={`${styles.button}`} onClick={handleDownload}>
       Download Daysheets
     </button>
   );
@@ -26,8 +28,55 @@ const Navbar = () => {
     window.location.href = daysheetsUrl;
   };
 
+  const [isHidden, setIsHidden] = useState(true);
+  
+
+  const toggleDisplay = () => {
+    setIsHidden(!isHidden);
+  };
+
   return (
-    <div className={`${styles.navBox} bg-frostedGlass z-20 drop-shadow-md border-[1px] border-gray`}>
+
+    
+
+
+
+    <div className={`${styles.navBox} bg-frostedGlass drop-shadow-md border-[1px] border-gray`}>
+
+        {/* Demo Modal */}
+
+        <div className={`fixed left-0 top-0 right-0 h-[100vh] mx-auto justify-center items-center bg-dimBlack z-40 ${isHidden ? 'hidden' : 'flex'}`}>
+        
+          <div className={`flex flex-col lg:flex-row`}>
+            
+            <div className='bg-blue lg:rounded-l-lg rounded-t-lg flex-col w-full lg:flex lg:max-w-[560px]'> {/* Modal contents */}
+              
+              <div className='my-[16px] ml-[32px]'>
+                
+                <div className='bg-white w-[32px] h-[32px] flex flex-col items-center justify-center rounded-full cursor-pointer' onClick={toggleDisplay}>
+                  <AiOutlineClose size={20} color='blue' />
+                </div>
+
+                <h3 className={`${styles.h3} pt-[16px] text-white text-left hidden lg:block`}>Book a Demo of Daysheets</h3>
+                <p className={`${styles.body} text-white text-left hidden lg:block`}>Eliminate tedious time spent on data entry.  We’ve re-imagined how to organize tours.  Daysheets allows you to enjoy your day off.  Doesn’t that sound nice? </p>
+              
+              </div>
+
+            </div>
+            
+            <div className='mx-auto flex flex-row'> {/* Calendly */}
+              
+              <div className="App bg-lightWhite rounded-r-lg lg:hidden">
+                <InlineWidget url="https://calendly.com/michael-csc/daysheets-demo"  styles={{ height: '800px', width: '320px' }}/>
+              </div>
+
+              <div className="App bg-lightWhite rounded-r-lg hidden lg:flex px-[16px]">
+                <InlineWidget url="https://calendly.com/michael-csc/daysheets-demo"  styles={{ height: '950px', width: '500px' }}/>
+              </div>
+            </div>
+          </div>
+        </div>
+      
       <div className={`${styles.contentBox} flex justify-between items-center h-16 px-4`}> {/* Navbar contents */}
         <div>
           <Link to="/"><img src={logo} alt="Daysheets logo" className="h-[40px]" /></Link>
@@ -39,6 +88,22 @@ const Navbar = () => {
             <li className='p-4 text-darkBlue'><Link to="/help">Help</Link></li>
           </ul>
           <DownloadButton handleDownload={handleDownload} />
+          
+          <div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+              className={`App bg-blue text-black text-center ${styles.buttonBlack}`}>
+                <PopupButton
+                  url="https://calendly.com/michael-csc/daysheets-demo"
+                  /*
+                  * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                  * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                  */
+                  rootElement={document.getElementById("root")}
+                  text="Book a Demo"
+                />
+              </div>
         </div>
 
         <div onClick={handleNav} className='block md:hidden'>
@@ -50,11 +115,12 @@ const Navbar = () => {
 
           <div><Link to="/"><img src={logo} alt="Daysheets logo" className="h-[64px]" /></Link></div>
 
-          <ul className="pt-24 pb-8 text-black ">
-            <li className='p-4 border-b border-gray-600 text-darkBlue'><Link to="/pricing">Pricing</Link></li>
-            <li className='p-4 text-darkBlue'><Link to="/help">Help</Link></li>
-          </ul>
-          <DownloadButton handleDownload={handleDownload} />
+          <div className='flex flex-col'>
+            <ul className="pt-24 pb-8 text-black ">
+              <li className='p-4 border-b border-gray-600 text-darkBlue'><Link to="/pricing">Pricing</Link></li>
+              <li className='p-4 text-darkBlue'><Link to="/help">Help</Link></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ const Footer = () => {
     <div className={`${styles.sectionBoxSmall} bg-gray`}>
         <div className={`${styles.contentBox} px-4`}>
             <div className='flex flex-col items-center gap-[32px]'>
-                <img src={logotype} alt="Daysheets Logotype" class="Daysheets Logotype"/>
+                <img src={logotype} alt="Daysheets Logotype" className="Daysheets Logotype"/>
                 <ul className='flex flex-row text-darkBlue gap-[16px]'>
                     <li>Help</li>
                     <li>Privacy Policy</li>

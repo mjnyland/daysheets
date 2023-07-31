@@ -12,10 +12,6 @@ import Footer from "./Footer";
 import Mobile from "./Mobile";
 import Pricing from "./Pricing";
 import HelpContent from "./HelpContent";
-import Popup from "./Popup";
-import FormEmail from "./FormEmail";
-import FormButtons from "./FormButtons";
 import FormCalendly from "./FormCalendly";
-import FormSuccess from "./FormSuccess";
 
-export { Hero, Navbar, Features, Personalized, Exports, GuestList, BottomCTA, TravelProfile, Reviews, Flights, Footer, Mobile, Pricing, HelpContent, Popup, FormEmail, FormButtons, FormCalendly, FormSuccess };
+export { Hero, Navbar, Features, Personalized, Exports, GuestList, BottomCTA, TravelProfile, Reviews, Flights, Footer, Mobile, Pricing, HelpContent, FormCalendly };
