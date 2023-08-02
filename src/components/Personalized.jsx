@@ -83,7 +83,7 @@ const Personalized = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 1}}
-                className={` bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ><h5>Coming soon</h5></motion.div>
+                className={` bg-dimWhite text-white px-6 py-2 rounded-full font-semibold w-fit mx-auto`} ><h5>Visibility</h5></motion.div>
                 <motion.h2 
                 variants={fadeUp2}
                 initial="hidden"
@@ -134,7 +134,7 @@ const Personalized = () => {
                 className={` text-white order-first lg:order-last lg:ml-[80px]`} > {/* Text Box */}
                     <h6 className={`${styles.tag}`}>Group events</h6>
                     <h3 className={`${styles.h3}`}>Ensure privacy and avoid confusion with visibility.</h3>
-                    <p className={`${styles.body} text-white`}>Group specific events and reservations ensure your band shows up to the right call time, in the correct lobby.</p>
+                    <p className={`${styles.body} text-white`}>Group specific events and reservations to ensure your band shows up to the right call time, in the correct lobby.</p>
                     
                 </motion.div>
                 

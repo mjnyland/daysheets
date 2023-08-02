@@ -13,5 +13,6 @@ import Mobile from "./Mobile";
 import Pricing from "./Pricing";
 import HelpContent from "./HelpContent";
 import FormCalendly from "./FormCalendly";
+import ReviewCard from "./ReviewCard";
 
-export { Hero, Navbar, Features, Personalized, Exports, GuestList, BottomCTA, TravelProfile, Reviews, Flights, Footer, Mobile, Pricing, HelpContent, FormCalendly };
+export { Hero, Navbar, Features, Personalized, Exports, GuestList, BottomCTA, TravelProfile, Reviews, Flights, Footer, Mobile, Pricing, HelpContent, FormCalendly, ReviewCard };

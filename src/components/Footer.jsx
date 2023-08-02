@@ -15,7 +15,7 @@ const Footer = () => {
                 </ul>
 
                 <div className={`h-[1px] w-full bg-darkBlue`}></div>
-                <p className={`${styles.body} text-darkBlue`}>© 2021 Daysheets. All rights reserved</p>
+                <p className={`${styles.body} text-darkBlue`}>© 2023 Daysheets. All rights reserved</p>
             </div>
 
         </div>

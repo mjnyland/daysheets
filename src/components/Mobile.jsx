@@ -35,7 +35,6 @@ const fadeUp2 = {
   },
 };
 
-
 const Mobile = () => {
 
   const options = [
@@ -84,14 +83,15 @@ const Mobile = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 1}}
-                className={` ${styles.h2} text-center text-white pt-[32px]`}>Experience data entry in <span className='text-blue'>minutes</span>, not hours.</motion.h2>
+                className={` ${styles.h2} text-center text-white pt-[32px]`}>Manage your <span className="text-blue">entire tour</span>, from the tool in your pocket.
+                </motion.h2>
                 <motion.div
                 variants={fadeUp2}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 1}}
                 >
-                    <p className={` text-white ${styles.h2Body}`}>Daysheets introduces a new era of efficiency to tour management, with easy tabbing, speedy imports, and time-saving shortcuts.</p>
+                    <p className={` text-white ${styles.h2Body}`}>Tour management as mobile as you are. Daysheets allows you to create and maintain your entire tour, wherever you are.</p>
                 </motion.div>
             </div>
 

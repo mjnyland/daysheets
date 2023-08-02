@@ -78,7 +78,7 @@ const Hero = () => {
               variants={fadeUp}
               initial="hidden"
               animate="visible"
-              >The modern solution for touring and <span className="text-blue">production management</span></motion.h1>
+              >The modern solution for touring and <span className="bg-gradient-to-r from-blue to-darkBlue bg-clip-text">production management</span></motion.h1>
           </div>
 
           <div className="max-w-[800px] pb-[40px]">
@@ -91,7 +91,7 @@ const Hero = () => {
               </motion.p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-[16px]">
+          <div className="flex flex-col lg:flex-row gap-[32px]">
             <motion.a 
               href={daysheetsUrl}
               className={`${styles.heroButton}`}
@@ -120,7 +120,7 @@ const Hero = () => {
 
         </div>
 
-        <div className={`${styles.h1} max-w-[1200px] pt-[80px] relative z-20`}>
+        <div className={`max-w-[1000px] pt-[80px] relative z-20`}>
           <motion.img 
             variants={fadeUp3}
             initial="hidden"

@@ -56,7 +56,7 @@ const Flights = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{once: true, amount: 1}}
-                className={`${styles.h2} pb-[32px] text-center text-darkBlue pt-[32px]`}>Never enter a <span className="text-blue">flight</span> again, or build a grid.</motion.h2>
+                className={`${styles.h2} pb-[32px] text-center text-darkBlue pt-[32px]`}>Never enter a <span className="text-blue">flight</span> or build a grid again.</motion.h2>
             </div>
 
             {/* Mobile */}
@@ -96,7 +96,7 @@ const Flights = () => {
                 <div className="pb-16">
                         <div className="h-[2px] w-full bg-gray"></div>
                         <h5 className={`${styles.tag} pt-[16px]`}>Step 1</h5>
-                        <h5 className={`${styles.h5} text-darkBlue`}>Upload tickets in any format.</h5>
+                        <h5 className={`${styles.h5} text-darkBlue pb-[32px]`}>Upload tickets in any format.</h5>
                         <p className={`${styles.body} text-darkBlue`}>Whether you engage a travel agent or book flights independently, just drag the ticket into Daysheets, and we’ll manage the data entry for you. Say goodbye to the hassle of manual input.</p>
                 </div>
 

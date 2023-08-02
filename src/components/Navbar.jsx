@@ -41,7 +41,7 @@ const Navbar = () => {
 
 
 
-    <div className={`${styles.navBox} bg-frostedGlass drop-shadow-md border-[1px] border-gray`}>
+    <div className={`${styles.navBox} bg-frostedGlass border-[1px] border-gray backdrop-filter backdrop-blur bg-opacity-30`}>
 
         {/* Demo Modal */}
 
@@ -77,7 +77,7 @@ const Navbar = () => {
           </div>
         </div>
       
-      <div className={`${styles.contentBox} flex justify-between items-center h-16 px-4`}> {/* Navbar contents */}
+      <div className={`${styles.contentBox} flex justify-between items-center h-[72px] px-4`}> {/* Navbar contents */}
         <div>
           <Link to="/"><img src={logo} alt="Daysheets logo" className="h-[40px]" /></Link>
         </div>

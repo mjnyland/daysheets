@@ -118,7 +118,7 @@ const TravelProfile = () => {
             
             
             {/* Desktop Grid */}
-            <div className='grid-cols-1 hidden lg:grid lg:grid-cols-3 items-start gap-y-[32px] gap-x-[16px]'>
+            <div className='grid-cols-1 hidden lg:grid lg:grid-cols-3 items-start gap-y-[32px] gap-x-[32px]'>
 
               <div className='flex flex-col justify-start mb-auto'>
 
@@ -151,18 +151,17 @@ const TravelProfile = () => {
                 </div>
 
                 <div className="pt-[64px]">
-                    <img src={ profileRequest } alt="Profile Requests" className=''/>
+                    <img src={ profileRequest } alt="Profile Requests" className='mx-auto'/>
                 </div>
 
 
                 <div className="relative">
-                    <div className="hidden absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-lightWhite to-blank"></div>
-                    <img src={ iPhoneMock } alt="Profile Requests" className=''/>
+                    <img src={ iPhoneMock } alt="Profile Requests" className=' mx-auto'/>
                 </div>
 
 
                 <div className="pt-[64px]">
-                    <img src={ profileExport } alt="Profile Requests" className=''/>
+                    <img src={ profileExport } alt="Profile Requests" className='mx-auto'/>
                 </div>
 
             
