@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*, *::before, *::after {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -11,9 +14,10 @@ html {
   height: 100%;
 }
 
-
-
-img, picture, svg, video {
+img,
+picture,
+svg,
+video {
   display: block;
   max-width: 100%;
 }
@@ -28,13 +32,15 @@ img, picture, svg, video {
   margin: 0;
 }
 
-.calendly-popup{
+.calendly-popup {
   background-color: rgba(250, 250, 255, 1);
   border-radius: 16px;
 }
 
-
-input, textarea, button, select {
+input,
+textarea,
+button,
+select {
   font: inherit;
 }
 
@@ -44,6 +50,8 @@ body {
   margin: 0 auto;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
   text-wrap: balance;
 }
