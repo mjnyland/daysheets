@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles"; // Import css modules stylesheet as styles
 import { logo } from "../assets"; // Import assets
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Popup isOpen={popupOpen} onClose={closePopup} />
+      <Popup isOpen={popupOpen} onClose={closePopup} formId="navbar-form" />
 
       <div
         className={`${styles.navBox} bg-frostedGlass border-[1px] border-gray backdrop-filter backdrop-blur bg-opacity-30 relative`}

@@ -68,7 +68,7 @@ const Hero = () => {
 
   return (
     <section id="root" className={`${styles.sectionBox} bg-white relative`}>
-      <Popup isOpen={popupOpen} onClose={closePopup} />
+      <Popup isOpen={popupOpen} onClose={closePopup} formId="hero-form" />
       <div
         className={`${styles.contentBox} flex flex-col items-center pt-[80px] px-4 overflow-hidden`}
       >
