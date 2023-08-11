@@ -55,3 +55,15 @@ h3,
 p {
   text-wrap: balance;
 }
+
+.modal-show {
+  display: flex;
+}
+
+.modal-hide {
+  display: none;
+}
+
+.hubspot-form {
+  min-height: 320px;
+}
